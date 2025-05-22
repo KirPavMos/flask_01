@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой Flask Сайт</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать на MyFlaskApp!</h1>
+        <p>Это мое первое Flask-приложение с HTML и CSS стилизацией.</p>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Логотип">
+    </div>
+</body>
+</html>
